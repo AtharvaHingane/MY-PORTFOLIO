@@ -5,7 +5,12 @@ body {
   font-family: Arial, sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  overflow-y: scroll;
 }
+  body::-webkit-scrollbar {
+  display: none;
+}
+
 
 .bgvideo {
   position: fixed;
@@ -120,8 +125,65 @@ body {
 }
 
 .button {
-  margin-top: 15px;
+  margin-top: 20px;
+} 
+
+.education-section {
+  margin-top: 80px;
+  text-align: center;
+  width: 100%;
 }
+
+.education-title {
+  font-size: 30px;
+  text-transform: uppercase;
+  border-bottom: 2px solid white;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+}
+
+.education-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 35px;
+  padding: 20px;
+}
+
+.edu-card {
+  width: 260px;
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.edu-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.edu-btn {
+  margin-top: 15px;
+  width: 130px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.edu-btn:hover {
+  background: white;
+  color: black;
+}
+
 
 .viewproject {
   font-weight: 500;
@@ -159,6 +221,12 @@ body {
   display: inline-block;
   padding-bottom: 5px;
 }
+.skills1 h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+ }
 
 /* ----- Skills Section ----- */
 .skills {
@@ -166,6 +234,11 @@ body {
   margin: 60px auto;
   width: 80%;
   max-width: 900px;
+} 
+
+.skillstext { 
+  text-align: center;
+  text-decoration: underline;
 }
 
 .skills h2 {
