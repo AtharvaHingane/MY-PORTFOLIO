@@ -92,9 +92,14 @@ body {
     margin-top: 5px;
     transform: translate(1.6rem,3rem);
   }
-  .aboutme, .skills, .contact,.education-section {
+  .aboutme, .skills, .contact {
     width: 90%;
     transform: translate(1.3rem);
+  }
+  .education-section {
+    width: 90%;
+     transform: translate(1.3rem);
+
   }
 }
 
