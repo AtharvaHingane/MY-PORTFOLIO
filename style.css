@@ -62,6 +62,7 @@ body {
 .pfp {
   text-align: center;
   margin-top: 10px;
+  margin-bottom: 15rem;
 }
 
 .pfplogo {
@@ -71,6 +72,11 @@ body {
   border-radius: 50%;
   display: block;
   margin: 3% auto;
+}
+
+.pfp h2{
+  transform: translate(0rem,8rem);
+  font-size: 3rem;
 }
 
 @media (max-width: 600px) {
